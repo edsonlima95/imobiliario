@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.bg-red-title {
+    color: #dc3545;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img.img-logo {
+    max-width: 150px;
+}
+
+
+
+div.hero {
+    background: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center 20%;
+}
+
+div.action {
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+div.action p.text-title {
+    color: white;
+    font-size: 2em;
+    background-color: #343a40;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+
+/**dobra de busca*/
+/*section.search-content form select {*/
+/*    background-color: #f8f9fa;*/
+/*    border: none;*/
+/*}*/
+
+section.search-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav.main-menu {
+    min-height: 80px;
+}
+
+nav.main-menu ul li a {
+    color: #807e7e;
+    font-weight: 500;
+}
+
+/*Property categorias*/
+section.property-category ul li a {
+    font-size: 0.5em;
+}
+
+section.property-category ul li p {
+    font-size: 0.9em !important;
+}
+
+section.property-category ul li p.imovel-price {
+    font-size: 1.3em !important;
+}
+
+/*categorias*/
+section.category {
+    background-color: #f8f9fa !important;
+}
+
+div.category-content {
+    border-bottom: 1px solid #dc3545;
+    margin-bottom: 30px;
+}
+
+div.category-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+
+div.category-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000027;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+div.category-title:hover {
+    font-size: 2.1em;
+}
+
+div.category-title p:hover {
+
+}
+
+div.card-img-category-1 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/regiao-central.jpg  ");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div.card-img-category-2 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/alto-padrao.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div.card-img-category-3 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/medio-padrao.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div.card-img-category-4 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/condominio.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+}
+
+div.card-img-category-5 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/chacara.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div.card-img-category-6 {
+    min-height: 215px;
+    padding: 0;
+    background: url("../img/cobertura.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div.category-content h1 {
+    color: #5f5f5f;
+    font-weight: bold;
+}
+
+div.category-content span.bg-red-title {
+    color: #dc3545;
+}
+
+div.category-content p {
+    color: #807e7e;
+    font-size: 1.3em;
+}
+
+div.card-img-category {
+    position: relative;
+}
+
+div.card-img-category p {
+    position: absolute;
+    top: 43%;
+    font-size: 1.5em;
+    left: 35%;
+    color: white;
+    font-weight: bold;
+}
+
+/*dobra de venda*/
+div.c-title {
+    border-bottom: 1px solid #dc3545;
+}
+
+div.c-title h2 {
+    color: #dc3545;
+}
+
+div.imovel-content {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    text-transform: capitalize;
+}
+
+div.imovel-content ul {
+    padding: 10px;
+}
+
+div.imovel-content ul li p i {
+    color: #343a40;
+}
+
+div.imovel-content p.imovel-price {
+    color: #00b44e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div.imovel-content h2 a {
+    font-size: 0.7em;
+    color: #dc3545;
+}
+
+/*Dobra do email*/
+section.mail {
+    background-color: currentColor;
+    padding: 50px;
+}
+
+section.mail h2 {
+    color: white;
+    text-align: center;
+}
+
+section.mail p {
+    color: #cecece;
+    text-align: center;
+    font-weight: 400;
+}
+
+section.mail form input {
+    padding: 25px;
+}
+
+section.mail form label {
+    color: white;
+}
+
+/*filtro*/
+section.filter-aside {
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.filter-aside div.row {
+    padding: 10px;
+}
+
+section.filter-aside select {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e4e4e4;
+}
+
+/*Imovel single*/
+div.hero-property {
+    background-color: #f8f9fa !important;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+div.hero-property .container {
+    padding: 50px 0;
+}
+
+div.hero-property .container h1 {
+    color: #343a40;
+}
+
+div.hero-property .container p {
+    color: #343a40;
+    font-weight: 500;
+}
+
+section.property small, section.property p.property-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section.property div.description p {
+    font-weight: 500;
+    line-height: 35px;
+}
+
+/*Contato*/
+section.contacts {
+    margin-top: 100px;
+    background-color: #343a40;
+}
+
+section.contacts div.contactd-colum {
+    padding: 80px 0;
+}
+
+section.contacts div.contactd-colum h2 {
+    color: #c7c7c7;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section.contacts div.contactd-colum p {
+    color: #c7c7c7;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+section.contacts div.contactd-colum small, section.contacts div.contactd-colum small a {
+    color: #c7c7c7;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+
+footer {
+    padding: 50px 0 90px;
+    background-color: #f8f9fa !important;
+    background: url("../img/footer.png") repeat-x bottom center;
+    background-size: 10%;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+footer h2 {
+    color: #343a40;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+footer ul li a {
+    color: #343a40;
+    font-weight: 500;
+}
+
+footer ul li a:hover {
+    color: #dc3545;
+}
+
+/*media queries*/
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    div.action a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    nav.address div.container div {
+        margin-bottom: 20px;
+    }
+
+    nav.address div.container div i{
+        font-size: 20px;
+    }
+
+    section.search-content {
+        padding-left: 20px;
+    }
+
+    div.category-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    footer div.container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.imovel-content img {
+        width: 100%;
+    }
+
+    div.contactd-colum {
+        flex-direction: column;
+    }
+
+    div.contactd-colum div {
+        margin-bottom: 25px;
+    }
+
+    section.property div.container {
+        flex-direction: column;
+    }
+
+    section.mail {
+        padding: 20px;
+    }
+}

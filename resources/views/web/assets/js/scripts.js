@@ -1,0 +1,83 @@
+$(function () {
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    //ABRE E FECHA O FILTRO AVANÇADO
+    $('a.advanced-filter').on('click', function (event) {
+        event.preventDefault();
+
+        var box = $('.fade-filter');
+        var button = $(this);
+
+        if (box.css("display") !== "none") {
+            button.text("Filtro Avançado ↓");
+        } else {
+            button.text("✗ Fechar");
+        }
+
+        $('.fade-filter').slideToggle();
+    })
+
+    //FILTRO AVANÇADO
+    $('body').on('change', 'select[name*="filter_"]', function () {
+
+        var search = $(this);
+        var nextIndex = $(this).data('index') + 1;
+
+        $.post(search.data('action'), {search: search.val()}, function (response) {
+            if (response.status == 'success') {
+
+                $('select[data-index="' + nextIndex + '"]').empty();
+
+                $('select[data-index="' + nextIndex + '"]').append(
+                    $('<option>', {
+                        value: "",
+                        text: "Selecione uma opção",
+                        disabled: "disabled",
+                        selected: 'selected'
+                    }),
+                );
+
+                $.each(response.data, function (key, value) {
+                    $('select[data-index="' + nextIndex + '"]').append(
+                        $('<option>', {
+                            value: value,
+                            text: value
+                        })
+                    );
+                });
+
+                $.each($('select[name*="filter_"]'), function (index, element) {
+
+                    if ($(element).data('index') >= nextIndex + 1) {
+                        $(element).empty().append(
+                            $('<option>', {
+                                text: 'Selecione o filtro anterior',
+                                disabled: true
+                            })
+                        );
+                    }
+
+                });
+                $('.selectpicker').selectpicker('refresh');
+            }
+
+            if (response.status === 'fail') {
+
+                if ($(element).data('index') >= nextIndex) {
+                    $(element).empty().append(
+                        $('<option>', {
+                            text: 'Selecione o filtro anterior',
+                            disabled: true
+                        })
+                    );
+                }
+                $('.selectpicker').selectpicker('refresh');
+            }
+        }, 'json');
+    })
+})

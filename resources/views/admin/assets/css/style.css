@@ -1,0 +1,65 @@
+h5.property-title{
+    padding: 10px;
+    font-size: 1.5em;
+    color: #212529;
+    margin-bottom: 0;
+}
+
+div.imovel-show {
+    padding: 10px 20px 10px 10px;
+}
+
+div.imovel-show ul li{
+    background-color: #F3F3F3;
+}div.imovel-show p{
+    padding: 10px;
+}
+div.imovel-show p i {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+div.property_image_item {
+    position: relative;
+}
+div.property_image_item .btn-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ec2b2b;
+    padding: 5px 10px;
+    border-radius: 0 0 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+a.btn-action-image {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 0 0 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-set-cover-green {
+    background-color: green !important;
+}
+
+div.property_image_item .btn-remove a {
+    color: white;
+    cursor: pointer;
+}
+
+div.imv-show {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
+div.btn-center {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
